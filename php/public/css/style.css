@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ---------------------- navbar ---------------------- */
+
+.navbar {
+    position:fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(61, 80, 255, 0.5);
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+@media screen and (max-width: 400px) {
+    .navbar-brand {
+        font-size: 0.8rem;
+    }
+}
+
+/* ---------------------- home ---------------------- */
+
+.container-home {
+    margin-top: 5rem;
+}
+
+.container-home h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container-home-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-home-left {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+
+.container-home-left-picture {
+    width: 500px;
+    margin: 1.5rem;
+}
+
+.container-home-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.container-home-right p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 991px) {
+    .container-home-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-home-left-picture {
+        width: 20rem;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container-home-left-picture {
+        width: 15rem;
+        margin: 1rem;
+    }
+}
